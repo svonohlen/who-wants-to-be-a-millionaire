@@ -1,23 +1,20 @@
-# Sandrin's codecademy coding projects
+# Who wants to be a millionaire
 
-asdf [link](https://github.com)
+The website I built based on [this youtube tutorial](youtube.com/link)
 
-**fett**
+I added the feature for the 50:50 and the phone a friend joker, plus a restart game feature.
 
-## U2
+# How to run the project
 
-- asdf2
-- asdf3
-- asdf4
+## `npm start`
 
-### U3
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-asdfasdf.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-Then run `npm install`
+## `npm test`
 
-commands:
-
-```
-npm install @types/react-transition-group
-```
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
