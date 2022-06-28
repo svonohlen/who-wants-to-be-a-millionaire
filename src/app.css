@@ -1,0 +1,319 @@
+.app {
+  height: 100vh;
+  display: flex;
+  background-color: #020230;
+  color: white;
+}
+
+.main {
+  width: 75%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #020230),
+    url("./images/background.jpg") center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.top {
+  height: 40%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.phoneJokerAnswerContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+img {
+  border-radius: 50%;
+  height: 20%;
+  max-width: 20%;
+  border: 5px solid rgb(138, 138, 236);
+  margin: 10px 10px;
+}
+
+.phoneJokerSpeechBubble {
+  width: 30%;
+  background: white;
+  height: 20%;
+  margin: 10px 10px;
+  padding: 20px;
+  text-align: center;
+  font-weight: 900;
+  color: white;
+  position: relative;
+  border: 5px solid rgb(138, 138, 236);
+  border-radius: 10px;
+  background: linear-gradient(#2312b8, #08074d);
+}
+
+.sb1:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid rgb(138, 138, 236);
+  border-top: 10px solid rgb(138, 138, 236);
+  border-bottom: 10px solid transparent;
+  left: -21px;
+  bottom: 6px;
+}
+
+.sb5:after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 8px solid transparent;
+  border-right: 8px solid linear-gradient(#2312b8, #08074d);
+  border-top: 8px solid linear-gradient(#2312b8, #08074d);
+  border-bottom: 8px solid transparent;
+  left: -11px;
+  bottom: 10px;
+}
+
+.timer {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 5px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 700;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.bottom {
+  height: 60%;
+}
+
+.trivia {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.question {
+  width: 80%;
+  background: linear-gradient(#020230, black);
+  border: 2px solid white;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5%;
+  margin-bottom: 50px;
+}
+
+.answers {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  height: 30%;
+  margin-bottom: 50px;
+}
+
+.answer {
+  width: 40%;
+  padding: 10px;
+  text-align: center;
+  background: linear-gradient(#0e0124, #22074d);
+  border: 1px solid white;
+  border-radius: 15px;
+  font-size: 20px;
+  font-weight: 300;
+  margin: 0 10px 20px 10px;
+  cursor: pointer;
+  height: 30px;
+}
+
+.answer:hover,
+.answer.active {
+  background: mediumblue;
+}
+
+.answer.correct {
+  animation: correct 3s ease forwards;
+}
+
+@keyframes correct {
+  0%,
+  22%,
+  42% {
+    background: mediumblue;
+  }
+  20%,
+  40%,
+  60% {
+    background: linear-gradient(#0e0124, #22074d);
+  }
+  62%,
+  100% {
+    background: green;
+  }
+}
+
+.answer.wrong {
+  animation: wrong 3s ease forwards;
+}
+
+@keyframes wrong {
+  0%,
+  22%,
+  42% {
+    background: mediumblue;
+  }
+  20%,
+  40%,
+  60% {
+    background: linear-gradient(#0e0124, #22074d);
+  }
+  62%,
+  100% {
+    background: crimson;
+  }
+}
+
+.pyramid {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.buttonContainer {
+  display: flex;
+  width: 100%;
+  height: 20%;
+  justify-content: space-around;
+}
+.jokerFiftyButton,
+.jokerPhoneButton {
+  width: 40%;
+  border-radius: 50%;
+  font-size: 22px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  margin-top: 50px;
+  border: 3px solid rgb(138, 138, 236);
+  background: linear-gradient(#2312b8, #08074d);
+  color: white;
+  cursor: pointer;
+}
+
+.jokerFiftyButton.used,
+.jokerPhoneButton.used {
+  background: grey;
+  border: 3px solid lightgrey;
+  pointer-events: none;
+}
+
+.moneyList {
+  list-style: none;
+  width: 100%;
+  padding: 20px;
+  height: 80%;
+}
+
+.moneyListItem {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.moneyListItem.active {
+  background-color: teal;
+}
+
+.moneyListItemNumber {
+  font-size: 18px;
+  font-weight: 100;
+  width: 30%;
+}
+
+.moneyListItemAmount {
+  font-size: 2vh;
+  font-weight: 300;
+}
+
+.stopContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  width: 100%;
+}
+
+.playAgainButton {
+  border-radius: 5px;
+  width: 20%;
+  height: 20%;
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(#301beb, #0805b3);
+  border: 3px solid rgb(138, 138, 236);
+}
+
+.start {
+  width: 250px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.startInput {
+  width: 100%;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.startInput:focus {
+  outline: none;
+}
+
+.startButton {
+  width: 100%;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+}
