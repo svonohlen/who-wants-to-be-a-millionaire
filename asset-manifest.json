@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/who-wants-to-be-a-millionaire/static/css/main.f05a82e5.css",
+    "main.js": "/who-wants-to-be-a-millionaire/static/js/main.08da282a.js",
+    "static/js/845.1d5b15a7.chunk.js": "/who-wants-to-be-a-millionaire/static/js/845.1d5b15a7.chunk.js",
+    "static/media/background.jpg": "/who-wants-to-be-a-millionaire/static/media/background.c137ccd722d64133b4df.jpg",
+    "static/media/src_sounds_play.mp3": "/who-wants-to-be-a-millionaire/static/media/src_sounds_play.8e5f6d1d81d4e1414b95.mp3",
+    "static/media/src_sounds_correct.mp3": "/who-wants-to-be-a-millionaire/static/media/src_sounds_correct.160572d72c858155072e.mp3",
+    "static/media/src_sounds_wrong.mp3": "/who-wants-to-be-a-millionaire/static/media/src_sounds_wrong.e946821894ae9b0a0d6f.mp3",
+    "index.html": "/who-wants-to-be-a-millionaire/index.html",
+    "main.f05a82e5.css.map": "/who-wants-to-be-a-millionaire/static/css/main.f05a82e5.css.map",
+    "main.08da282a.js.map": "/who-wants-to-be-a-millionaire/static/js/main.08da282a.js.map",
+    "845.1d5b15a7.chunk.js.map": "/who-wants-to-be-a-millionaire/static/js/845.1d5b15a7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f05a82e5.css",
+    "static/js/main.08da282a.js"
+  ]
+}
